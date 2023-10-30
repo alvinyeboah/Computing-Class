@@ -1,8 +1,8 @@
 def clean_string(input_string):
     cleaned_string = ""
     for x in input_string:
-        if x.isalpha() and x.islower():
-            cleaned_string += x
+        if x.isalpha():
+            cleaned_string += x.lower()
     return cleaned_string
 
 def anagrams(string1, string2):
@@ -28,4 +28,4 @@ def anagrams(string1, string2):
 
 
 
-print(anagrams("aLvin", string2))
+print(anagrams("alvin ", "ni Vla "))
